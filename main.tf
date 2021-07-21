@@ -17,3 +17,4 @@ resource "aws_s3_bucket" "content" {
   bucket = "willsher.systems"
   acl    = "public-read"
 }
+
