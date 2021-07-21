@@ -28,6 +28,7 @@ jobs:
         id: docs
         uses: terraform-docs/gh-actions@v0.6.1
         with:
+          config-file: .terraform-docs.yml
           fail-on-diff: true
 
       - name: Terraform Init
