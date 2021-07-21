@@ -1,7 +1,11 @@
 repos:
-  - repo: git://github.com/antonbabenko/pre-commit-terraform
-    rev: 9b84f70efef7419e53c9526dff2e4a7d6bc9c78d
+  - repo: https://github.com/antonbabenko/pre-commit-terraform
+    rev: 9b84f70efef7419e53c9526dff2e4a7d6bc9c78d # v1.50.0
     hooks:
       - id: terraform_fmt
-      - id: terraform_docs_replace
       - id: terraform_validate
+  - repo: https://github.com/terraform-docs/terraform-docs
+    rev: 52f0ea072b33591f09a4b5984c53adea5b0beeba # v0.14.1
+    hooks:
+      - id: terraform-docs-go
+        args: ["."]
